@@ -1,0 +1,31 @@
+.submitbtn {
+    background: none;
+    border: none;
+}
+
+.task_block {
+    height: fit-content;
+    position: relative;
+    width: 80vw;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    border: 3px solid;
+    border-color: rgb(21, 22, 22);
+    background-color: rgb(255, 255, 255);
+}
+
+.edit_input {
+    width: 90%;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+.tasks {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
