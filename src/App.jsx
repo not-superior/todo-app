@@ -3,6 +3,12 @@ import AppCSS from '../styles/App.module.css'
 import TodoList from './ListIterator';
 import AddTask from './AddTask';
 
+let defaultArr = [];
+
+if(JSON.parse(localStorage.getItem('task-list'))!=null){
+  defaultArr = JSON.parse(localStorage.getItem('task-list'));
+}
+
 const App = () =>{
 
   const [changeState, setState] = useState(false);
@@ -23,7 +29,7 @@ const App = () =>{
         return state;
     }
 
-  },{task: "", taskList: JSON.parse(localStorage.getItem('task-list'))})
+  },{task: "", taskList: defaultArr})
 
   useEffect(() =>{
     localStorage.setItem('task-list', JSON.stringify(state.taskList))
