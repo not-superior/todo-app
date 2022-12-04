@@ -12,6 +12,7 @@
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
     "bootstrap": "^5.2.3",
+    "kelvin-to-celsius": "^1.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",

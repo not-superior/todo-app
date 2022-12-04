@@ -2,6 +2,7 @@ import { useReducer, useState, useEffect } from 'react'
 import AppCSS from '../styles/App.module.css'
 import TodoList from './ListIterator';
 import AddTask from './AddTask';
+import Weather from './Weather';
 
 let defaultArr = [];
 
@@ -82,6 +83,7 @@ const App = () =>{
   return (
     <>
       <div className={AppCSS.app}>
+        <Weather></Weather>
         <h1 className={AppCSS.header}>ToDo App</h1>
         <button className={AppCSS.addbtn} onClick={()=>setModal(!openModal)}>Create Task</button>
         <AddTask setTask = {dispatch} statusModal = {setModal} submitTask = {handleSubmit} openPopUp = {openModal}></AddTask>
