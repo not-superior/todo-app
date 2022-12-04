@@ -84,7 +84,7 @@ const App = () =>{
     <>
       <div className={AppCSS.app}>
         <Weather></Weather>
-        <h1 className={AppCSS.header}>ToDo App</h1>
+        <h1 className={AppCSS.header}>My Tasks</h1>
         <button className={AppCSS.addbtn} onClick={()=>setModal(!openModal)}>Create Task</button>
         <AddTask setTask = {dispatch} statusModal = {setModal} submitTask = {handleSubmit} openPopUp = {openModal}></AddTask>
       </div>

@@ -41,8 +41,6 @@ const Temp = () =>{
         getApiData();      
     },[])
 
-    console.log(data)
-
     return(
         data!=null ?
         <div className="temp-header" style={style}>
