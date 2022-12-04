@@ -44,7 +44,7 @@ const Temp = () =>{
     return(
         data!=null ?
         <div className="temp-header" style={style}>
-            <div style={tempStyle}><img src={"http://openweathermap.org/img/w/"+data.weather[0].icon+".png"} style={imgStyle}></img></div>
+            <div style={tempStyle}><img src={"https://openweathermap.org/img/w/"+data.weather[0].icon+".png"} style={imgStyle}></img></div>
             <div style={contentStyle}>{Math.ceil(data.main.temp - 273.15)}&deg;C</div>
         </div>
         :
