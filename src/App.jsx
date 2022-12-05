@@ -59,7 +59,10 @@ const App = () =>{
     dispatch({type: "DELETE_TASK", modArr: filteredArray});
   }
 
-  const editFunc = (editText, id) =>{    
+  const editFunc = (editText, id) =>{
+    
+    if(!editText) return;
+    
     state.taskList.map((todo) => {
       if(todo.id === id){
         todo.text = editText;
